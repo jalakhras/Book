@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Web", "Books.Web\Book
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books.Entities", "Books.Entities\Books.Entities.csproj", "{246617DD-C3F3-4A35-A03A-A9A9ECB3B17A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFD5FD09-7081-42A2-872A-BF8D4EE8604E}"
+	ProjectSection(SolutionItems) = preProject
+		CommandUseToCreateMutipleMigrations.txt = CommandUseToCreateMutipleMigrations.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

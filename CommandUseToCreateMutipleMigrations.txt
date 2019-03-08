@@ -1,0 +1,8 @@
+command migertion used to create tow DataBase 
+
+Enable-Migrations -ContextTypeName IdentityDb -MigrationsDirectory DataContexts\IdentityMigrations
+Enable-Migrations -ContextTypeName BooksDb -MigrationsDirectory DataContexts\BookMigrations
+Add-Migration -ConfigurationTypeName Books.Web.DataContexts.IdentityMigrations.Configuration "initialCreate"
+Add-Migration -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration "initialCreate"
+Update-Database -ConfigurationTypeName Books.Web.DataContexts.IdentityMigrations.Configuration
+Update-Database -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration
