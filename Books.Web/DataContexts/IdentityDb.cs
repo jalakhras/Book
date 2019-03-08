@@ -19,7 +19,11 @@ namespace Books.Web.DataContexts
         {
             return new IdentityDb();
         }
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("identity");
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
 

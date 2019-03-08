@@ -6,3 +6,12 @@ Add-Migration -ConfigurationTypeName Books.Web.DataContexts.IdentityMigrations.C
 Add-Migration -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration "initialCreate"
 Update-Database -ConfigurationTypeName Books.Web.DataContexts.IdentityMigrations.Configuration
 Update-Database -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration
+Add-Migration -ConfigurationTypeName Books.Web.DataContexts.IdentityMigrations.Configuration "DefaultSchema"
+Add-Migration -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration "DefaultSchema"
+Update-Database -ConfigurationTypeName Books.Web.DataContexts.IdentityMigrations.Configuration
+Update-Database -ConfigurationTypeName Books.Web.DataContexts.BookMigrations.Configuration
+
+
+
+
+trun on Glimpse http://localhost:53509/Glimpse.axd

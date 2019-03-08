@@ -198,12 +198,20 @@
     <Compile Include="DataContexts\BookMigrations\201903082030425_initialCreate.Designer.cs">
       <DependentUpon>201903082030425_initialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\BookMigrations\201903082151368_DefaultSchema.cs" />
+    <Compile Include="DataContexts\BookMigrations\201903082151368_DefaultSchema.Designer.cs">
+      <DependentUpon>201903082151368_DefaultSchema.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\BookMigrations\Configuration.cs" />
     <Compile Include="DataContexts\BooksDb.cs" />
     <Compile Include="DataContexts\IdentityDb.cs" />
     <Compile Include="DataContexts\IdentityMigrations\201903082028571_initialCreate.cs" />
     <Compile Include="DataContexts\IdentityMigrations\201903082028571_initialCreate.Designer.cs">
       <DependentUpon>201903082028571_initialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201903082151068_DefaultSchema.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201903082151068_DefaultSchema.Designer.cs">
+      <DependentUpon>201903082151068_DefaultSchema.cs</DependentUpon>
     </Compile>
     <Compile Include="DataContexts\IdentityMigrations\Configuration.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
@@ -330,8 +338,14 @@
     <EmbeddedResource Include="DataContexts\BookMigrations\201903082030425_initialCreate.resx">
       <DependentUpon>201903082030425_initialCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\BookMigrations\201903082151368_DefaultSchema.resx">
+      <DependentUpon>201903082151368_DefaultSchema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\IdentityMigrations\201903082028571_initialCreate.resx">
       <DependentUpon>201903082028571_initialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201903082151068_DefaultSchema.resx">
+      <DependentUpon>201903082151068_DefaultSchema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
