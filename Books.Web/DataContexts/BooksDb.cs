@@ -9,7 +9,7 @@ namespace Books.Web.DataContexts
 {
     public class BooksDb : DbContext
     {
-        public BooksDb(): base("DefaultConnection")
+        public BooksDb(): base("BookConnection")
         {
         }
         public DbSet<Book> Books { get; set; }

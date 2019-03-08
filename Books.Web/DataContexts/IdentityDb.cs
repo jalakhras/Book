@@ -11,7 +11,7 @@ namespace Books.Web.DataContexts
     public class IdentityDb : IdentityDbContext<ApplicationUser>
     {
         public IdentityDb()
-            : base("DefaultConnection")
+            : base("BookConnection")
         {
         }
 
